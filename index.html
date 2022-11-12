@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Simon Game</title>
+</head>
+<body background="portal.jpg">
+    <h1>Simon Game</h1>
+    <div class="score">
+        <p class="current-score"></p>
+        <p class="high-score"></p>
+    </div>
+
+    <!-- Initial Window -->
+    <div class="first-window">
+        <button class="start-game-button">START GAME</button>
+    </div>
+
+    <!-- Lose Window -->
+    <div class="last-window">
+        <button class="start-game-button">RESTART</button>
+    </div>
+
+    <div class="button-container">
+        <div class="first-row">
+            <button class="button green left-button" id="green"></button>
+            <button class="button red right-button" id="red"></button>
+        </div>
+
+        <div class="circle"></div>
+
+        <div class="second-row">
+            <button class="button yellow left-button" id="yellow"></button>
+            <button class="button blue right-button" id="blue"></button>
+        </div>
+    </div>
+
+    <footer>
+www devXIstefan co.uk
+    </footer>
+
+
+    <!-- JQuery & Custom JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

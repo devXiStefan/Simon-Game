@@ -1,0 +1,180 @@
+body {
+    background-image: "portal.png"
+    background-repeat: no-repeat;
+    background-size: 100% 145.5%;
+    background-position: ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #2196f3;
+}
+
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5rem;
+}
+
+footer {
+    margin-top: 70px;
+}
+
+
+.first-window, .last-window {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    background-color: #2D2436;
+    position: absolute;
+    border: 5px solid #000;
+    border-radius: 100%;
+    z-index: 1;
+    left: 50%;
+    margin-left: -116px;
+    top: 42%;
+    margin-top: -60px;
+}
+
+.start-game-button{
+    shape-image-threshold: circle();
+    height: 15%;
+    width: 23%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    background: transparent;
+
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 15px #4DD0E1, 0 0 17.5px #FF10F0, 0 0 20px #0073e6, 0 0 25px #FF10F0;
+    border-radius: 50px;
+    box-shadow: 0 0px #2196f3;
+    border: none;
+}
+
+.start-game-button:hover {
+  box-shadow: 0 0 5px #0073e6, 0 0 20px #fff, 0 0 20px #fff inset;
+}
+
+.button-container {
+    padding-top: 40px;
+    position: relative;
+}
+
+.button {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #000;
+    border-radius: 20px;
+}
+
+.left-button {
+    margin-right: -16px;
+}
+
+.green {
+    background-color: #8ce436;
+    -webkit-border-radius:320px 20px 20px;
+    -moz-border-radius:320px 20px 20px;
+    -o-border-radius:320px 20px 20px;
+    border-radius:320px 20px 20px;
+}
+.green:hover {
+   box-shadow: 0 0 10px #8ce436, 0 0 20px #8ce436, 0 0 20px #fff inset;
+ }
+
+.red {
+    background-color: #FF28C9;
+    -webkit-border-radius:20px 320px 20px 20px;
+    -moz-border-radius:20px 320px 20px 20px;
+    -o-border-radius:20px 320px 20px 20px;
+    border-radius:20px 320px 20px 20px;
+}
+.red:hover {
+   box-shadow: 0 0 10px #FF28C9, 0 0 20px #FF28C9, 0 0 20px #fff inset;
+}
+
+.yellow {
+    background-color: #FF3300;
+    -webkit-border-radius:20px 20px 20px 320px;
+    -moz-border-radius:20px 20px 20px 320px;
+    -o-border-radius:20px 20px 20px 320px;
+    border-radius:20px 20px 20px 320px;
+}
+.yellow:hover {
+   box-shadow: 0 0 10px #FF3300, 0 0 20px #FF3300, 0 0 20px #fff inset;
+}
+
+.blue {
+    background-color: #287CFF;
+    -webkit-border-radius:20px 20px 320px 20px;
+    -moz-border-radius:20px 20px 320px 20px;
+    -o-border-radius:20px 20px 320px 20px;
+    border-radius:20px 20px 320px 20px;
+}
+.blue:hover {
+   box-shadow: 0 0 10px #00aced, 0 0 20px #00aced, 0 0 20px #fff inset;
+}
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.unclickable {
+    pointer-events: none;
+}
+
+.not-displayed {
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px){
+    h1 {
+        font-size: 1.5rem;
+    }
+
+
+    .start-game-button {
+        font-size: 1.5rem;
+        height: 20%;
+    }
+
+    .button {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        margin: -37px 0 0 -81px
+    }
+
+    .current-score, .high-score{
+        font-size: 0.5rem;
+    }
+}
+footer {
+  margin-top: 5%;
+  color: #4DD0E1;
+  text-align: inherit;
+  font-family: 'Indie Flower', cursive;
+
+}
